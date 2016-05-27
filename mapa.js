@@ -20,8 +20,8 @@ function init(){
 		var xy = new Array();
 
 		for(var i=0; i<5;i++){
-			var xCoordinate= json.stations[i].longitude;
-			var yCoordinate= json.stations[i].latitude;
+			var xCoordinate= parseFloat(json.stations[i].longitude);
+			var yCoordinate= parseFloat(json.stations[i].latitude);
 
 			//aquest tall de codi afegier a l'array xy totes les coordenades. 
 			xy[i] = [yCoordinate, xCoordinate];
