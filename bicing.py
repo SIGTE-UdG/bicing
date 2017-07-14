@@ -6,12 +6,10 @@ from time import gmtime, strftime
 #acceso al servicio web del bicing
 r = requests.get('http://wservice.viabicing.cat/v2/stations')
 bicingJson = r.json()
-currentTime = strftime("%Y-%m-%d %H:%M:%S", gmtime())
-print bicingJson['updateTime']
 
 #conexión a la base de datos
 try:
-    conn = psycopg2.connect("dbname='bicing' user='postgres' host='localhost' password='postgres'")
+    conn = psycopg2.connect("dbname='bicing' user='tu_usuari' host='localhost' password='tu_pswd'")
 except:
     print "I am unable to connect to the database"
 
