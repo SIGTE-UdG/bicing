@@ -21,6 +21,7 @@ Se ha utilizado un script en python (bicing.py) para ir recogiendo los datos y a
 
 ## Visualización de los datos
 
+Se ha creado una aplicación web map utilitzando la libreria [leaflet](http://leafletjs.com/) para visualizar dinámicamente los datos de uso del bicing. 
 
 
 ## Mas información
