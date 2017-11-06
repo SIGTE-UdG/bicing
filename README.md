@@ -18,6 +18,11 @@ En el archivo bicing.sql se muestran las sentencias sql para crear la tabla y la
 Los datos de han obtenido a través de la API abierta del servicio de Bicing de Barcelona.
 Se ha utilizado un script en python (bicing.py) para ir recogiendo los datos y almacenarlos en la base de datos.
 
+
+## Visualización de los datos
+
+
+
 ## Mas información
 
 Blog UNIGIS Girona:
