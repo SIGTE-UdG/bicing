@@ -14,6 +14,26 @@ var map = L.map('map', {
 	//maxBounds: [[2.278786,41.45106],[2.0924,41.341664]]
 });
 
+//pannel informació
+var infoPanel = L.Control.extend({
+	options:{
+		position:'topright'
+	},
+	onAdd:function(map){
+		var pannel = L.DomUtil.create('div','info');
+		pannel.style.backgroundColor = '#d10a0b';
+		pannel.style.color = 'white';
+		pannel.style.backgroundSize = "50px 50px";
+    pannel.style.width = '250px';
+    pannel.style.height = '230px';
+		pannel.innerHTML = "<h1>Minuto a minuto del Bicing</h1><p class='subtitol'>Actividad (nº de bicis recogidas) en las estaciones de Bicing por minuto durante un dia laboral.</p><ul id='displayed-list'></ul>";
+
+		return pannel;
+	}
+});
+map.addControl(new infoPanel());
+
+//control start-stop
 var timer_state = false;
 
 var customControl =  L.Control.extend({

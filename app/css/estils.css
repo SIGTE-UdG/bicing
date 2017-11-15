@@ -80,6 +80,17 @@ html, body, #map {
 	opacity: 0.8;
 }
 
+.info{
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color:white;
+	text-align: left;;
+	font-weight: bold;
+	padding: 4%;
+	background-color: #d10a0b;
+	opacity: 0.8;
+	z-index: 1000;
+}
+
 .leaflet-control-custom{
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	color:white;
