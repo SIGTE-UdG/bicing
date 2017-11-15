@@ -26,7 +26,7 @@ var infoPanel = L.Control.extend({
 		pannel.style.backgroundSize = "50px 50px";
     pannel.style.width = '250px';
     pannel.style.height = '230px';
-		pannel.innerHTML = "<h1>Minuto a minuto del Bicing</h1><p class='subtitol'>Actividad (nº de bicis recogidas) en las estaciones de Bicing por minuto durante un dia laboral.</p><ul id='displayed-list'></ul>";
+		pannel.innerHTML = "<h1>Minuto a minuto del Bicing</h1><p class='subtitol'>Actividad (num. de bicis recogidas) en las estaciones de Bicing por minuto durante un dia laboral.</p><ul id='displayed-list'></ul>";
 
 		return pannel;
 	}
@@ -119,7 +119,7 @@ function loadMarkers(){
 				//update number of bikes
 				var list = document.getElementById('displayed-list');
 				var temps = 1;
-				list.innerHTML = ' <b>Hora: '+msToTime(data.features[1].properties.hora)+'</b></br> <b>Nº de bicis: '+data.features.length+'</b>';
+				list.innerHTML = ' <b>Hora: '+msToTime(data.features[1].properties.hora)+'</b></br> <b>Num. bicis: '+data.features.length+'</b>';
 
 				//delete las markers of bikes
 				if(allMarkers.length > 800){
