@@ -44,10 +44,10 @@ var customControl =  L.Control.extend({
     var container = L.DomUtil.create('div', 'leaflet-bar leaflet-control leaflet-control-custom');
     container.style.backgroundColor = '#d10a0b';
 		container.style.color = 'white';
-		container.append('Start / Stop');
     container.style.backgroundSize = "50px 50px";
     container.style.width = '100px';
     container.style.height = '30px';
+		container.innerHTML = "Start/Stop";
 
 		var timer;
 		var timesRun = 0;
